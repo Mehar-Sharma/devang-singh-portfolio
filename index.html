@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devang Singh — Civil Engineer &amp; 3D Interior Visualiser</title>
+  <meta name="description" content="Portfolio of Devang Singh, civil engineer and 3D interior visualiser from Ajmer — AutoCAD working drawings, SketchUp and 3ds Max interiors, elevations and site execution.">
+  <meta name="theme-color" content="#0d0c0b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0c0b'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='34' fill='%23c8a46e'%3Eds%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <svg class="loader__plan" viewBox="-3 -3 46 61" fill="none"></svg>
+      <div class="loader__meta">
+        <span class="mono">DEVANG SINGH — SHEET A-00</span>
+        <span class="loader__count mono"><span class="loader__num">000</span>%</span>
+      </div>
+      <p class="loader__tag">Drafting <em>spaces</em>…</p>
+    </div>
+    <div class="loader__panel loader__panel--1"></div>
+    <div class="loader__panel loader__panel--2"></div>
+  </div>
+
+  <!-- ============ CURSOR / OVERLAYS ============ -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="gridlines" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a href="#top" class="nav__logo" data-magnetic aria-label="Back to top">
+      <span class="nav__mark">ds</span>
+      <span class="nav__name">Devang Singh<small>Civil Eng. · 3D Visualiser</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" class="roll"><span class="roll__mask"><span class="roll__txt" data-text="Work">Work</span></span></a>
+      <a href="#drawings" class="roll"><span class="roll__mask"><span class="roll__txt" data-text="Drawings">Drawings</span></span></a>
+      <a href="#archive" class="roll"><span class="roll__mask"><span class="roll__txt" data-text="Archive">Archive</span></span></a>
+      <a href="#about" class="roll"><span class="roll__mask"><span class="roll__txt" data-text="About">About</span></span></a>
+      <a href="#contact" class="roll"><span class="roll__mask"><span class="roll__txt" data-text="Contact">Contact</span></span></a>
+    </nav>
+    <a href="#contact" class="nav__cta" data-magnetic><span class="nav__dot"></span>Available for projects</a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <div class="menu" aria-hidden="true">
+    <nav class="menu__links">
+      <a href="#work"><small>01</small>Work</a>
+      <a href="#drawings"><small>02</small>Drawings</a>
+      <a href="#archive"><small>03</small>Archive</a>
+      <a href="#about"><small>04</small>About</a>
+      <a href="#contact"><small>05</small>Contact</a>
+    </nav>
+    <div class="menu__foot mono">
+      <a href="mailto:devangsinghmangliya@gmail.com">devangsinghmangliya@gmail.com</a>
+      <a href="tel:+917851944704">+91 78519 44704</a>
+    </div>
+  </div>
+
+  <main id="smooth">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="hero3d" aria-label="Interactive 3D model of a ground floor plan designed by Devang Singh"></canvas>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__corner hero__corner--tl mono">
+        <span>Portfolio ’26</span>
+        <span>Vol. 01 — Residential</span>
+      </div>
+      <div class="hero__corner hero__corner--tr mono">
+        <span>26.45° N · 74.64° E</span>
+        <span>Ajmer, Rajasthan</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow mono"><span class="tick"></span>Civil Engineer · 3D Interior Visualiser</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span class="hero__word">Devang</span></span>
+          <span class="hero__line"><span class="hero__word"><em>Singh</em></span></span>
+        </h1>
+        <p class="hero__lead">I turn <em>AutoCAD lines</em> into spaces you can walk through — working drawings, SketchUp &amp; 3ds Max interiors, and the site execution that makes them real.</p>
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--solid" data-magnetic><span>See the work</span><i class="btn__arrow">↘</i></a>
+          <a href="assets/Devang-Singh-CV.pdf" class="btn btn--ghost" target="_blank" rel="noopener" data-magnetic><span>Download CV</span><i class="btn__arrow">↗</i></a>
+        </div>
+      </div>
+
+      <div class="hero__caption mono">
+        <span class="hero__fig">Fig. 01</span>
+        <span>Ground floor plan · 40′ × 55′<br>extruded live in WebGL — move your cursor</span>
+      </div>
+      <a href="#about" class="hero__scroll mono" aria-label="Scroll down"><span>Scroll</span><i></i></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" aria-label="Tools and disciplines">
+      <div class="marquee__row" data-dir="1">
+        <div class="marquee__track">
+          <span>AutoCAD</span><b>✦</b><span><em>SketchUp</em></span><b>✦</b><span>3ds Max</span><b>✦</b><span><em>Revit</em></span><b>✦</b><span>Interior Design</span><b>✦</b><span><em>Working Drawings</em></span><b>✦</b><span>Site Execution</span><b>✦</b><span><em>BOQ &amp; Estimation</em></span><b>✦</b>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--outline" data-dir="-1">
+        <div class="marquee__track">
+          <span>Living</span><b>◯</b><span>Staircases</span><b>◯</b><span>Bedrooms</span><b>◯</b><span>Kitchens</span><b>◯</b><span>Bathrooms</span><b>◯</b><span>Ceilings</span><b>◯</b><span>Elevations</span><b>◯</b><span>Floor Plans</span><b>◯</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / STATEMENT ============ -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <span class="mono section-index">(01)</span>
+        <span class="mono">Profile — Sheet A-01</span>
+      </div>
+      <p class="statement" data-words>
+        A civil engineer who designs like an interior architect. I draft the plan, model every surface in 3D, and then stand on site until the marble, the light and the joinery match the render — <em>line for line.</em>
+      </p>
+
+      <div class="about__grid">
+        <div class="about__stats">
+          <div class="stat"><span class="stat__num" data-count="27">0</span><span class="stat__label mono">Rendered views<br>in this folio</span></div>
+          <div class="stat"><span class="stat__num" data-count="3" data-pad="2">0</span><span class="stat__label mono">AutoCAD floor<br>plans</span></div>
+          <div class="stat"><span class="stat__num" data-count="5" data-pad="2">0</span><span class="stat__label mono">Design &amp; drafting<br>tools</span></div>
+          <div class="stat"><span class="stat__num" data-count="2020">0</span><span class="stat__label mono">Started civil<br>engineering</span></div>
+        </div>
+        <div class="about__card reveal-up">
+          <div class="about__card-row"><span class="mono">Now</span><p>Junior Civil Engineer, <strong>Bhagwant University</strong></p></div>
+          <div class="about__card-row"><span class="mono">Before</span><p>AutoCAD &amp; Interior Design, <strong>CURIO Interiors</strong></p></div>
+          <div class="about__card-row"><span class="mono">Trained</span><p>Diploma in Civil Engineering, <strong>Govt. Polytechnic College Ajmer</strong></p></div>
+          <div class="about__card-row"><span class="mono">Based</span><p>Panchsheel Nagar, <strong>Ajmer</strong> — working across Rajasthan</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK (horizontal) ============ -->
+    <section class="work" id="work">
+      <div class="work__pin">
+        <div class="work__head">
+          <div class="section-head">
+            <span class="mono section-index">(02)</span>
+            <span class="mono">Selected Work — Sheets A-02 → A-08</span>
+          </div>
+          <h2 class="display split-lines">Spaces, <em>rendered</em><br>before they’re built.</h2>
+          <p class="work__hint mono"><span class="work__hint-line"></span>Scroll to walk through · click any room</p>
+        </div>
+
+        <div class="work__track">
+          <article class="card" data-project="living" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/living-teal-sofa-sm.webp" alt="Living room with teal sectional, marble feature wall and LED grid ceiling" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">01 / 07</span>
+              <h3 class="card__title">The Teal <em>Living Room</em></h3>
+              <p class="mono card__tags">Living · Marble · LED grid ceiling</p>
+            </div>
+          </article>
+          <article class="card card--tall" data-project="stair" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/stair-leaf-panels-sm.webp" alt="Floating staircase with glass balustrade and arched leaf-motif wall panels" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">02 / 07</span>
+              <h3 class="card__title">Floating Stair <em>&amp; Foyer</em></h3>
+              <p class="mono card__tags">Double height · Glass · Walnut</p>
+            </div>
+          </article>
+          <article class="card" data-project="dining" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/dining-vanity-sm.webp" alt="Dining room with grey upholstered chairs, arched TV wall and marble slabs" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">03 / 07</span>
+              <h3 class="card__title">Dining &amp; <em>Family Lounge</em></h3>
+              <p class="mono card__tags">Dining · Fluted walnut · Arch niche</p>
+            </div>
+          </article>
+          <article class="card card--tall" data-project="bedroom" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/bedroom-grey-sm.webp" alt="Bedroom with fluted headboard wall and halo wall lights" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">04 / 07</span>
+              <h3 class="card__title">Bedrooms <em>&amp; Lounge</em></h3>
+              <p class="mono card__tags">Bedroom · Cove ceiling · TV walls</p>
+            </div>
+          </article>
+          <article class="card" data-project="kitchen" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/kitchen-l-shape-sm.webp" alt="L-shaped modular kitchen in champagne gloss with stone backsplash" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">05 / 07</span>
+              <h3 class="card__title">Modular <em>Kitchen</em></h3>
+              <p class="mono card__tags">Kitchen · High-gloss · Task light</p>
+            </div>
+          </article>
+          <article class="card card--tall" data-project="bath" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/bath-stone-wc-sm.webp" alt="Grey stone bathroom with walk-in shower and lit niche" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">06 / 07</span>
+              <h3 class="card__title">Stone &amp; <em>Onyx Baths</em></h3>
+              <p class="mono card__tags">Bathroom · Travertine · Onyx</p>
+            </div>
+          </article>
+          <article class="card" data-project="exterior" data-cursor="Open">
+            <div class="card__media"><img src="assets/img/exterior-corner-sm.webp" alt="Corner elevation of a G+1 house with brown frame and stone cladding" loading="lazy"></div>
+            <div class="card__info">
+              <span class="mono card__num">07 / 07</span>
+              <h3 class="card__title">Residential <em>Elevations</em></h3>
+              <p class="mono card__tags">Exterior · Facade · G+1</p>
+            </div>
+          </article>
+          <div class="work__end">
+            <p class="display-sm">27 views.<br><em>One obsession</em> with detail.</p>
+            <a href="#archive" class="btn btn--ghost" data-magnetic><span>Open the archive</span><i class="btn__arrow">↘</i></a>
+          </div>
+        </div>
+        <div class="work__progress"><span></span></div>
+      </div>
+    </section>
+
+    <!-- ============ MATERIALS ============ -->
+    <section class="materials" id="materials">
+      <div class="section-head">
+        <span class="mono section-index">(03)</span>
+        <span class="mono">Material Library — sampled from the renders</span>
+      </div>
+      <div class="materials__intro">
+        <h2 class="display split-lines">A palette you can <em>touch.</em></h2>
+        <p class="materials__copy">Every finish below is sampled straight out of Devang’s renders and wrapped on a live shader ball — the same way a material is tuned in 3ds Max before it ever reaches a wall. Hover to spin.</p>
+      </div>
+      <div class="materials__stage">
+        <canvas id="materials3d" aria-hidden="true"></canvas>
+        <div class="materials__grid">
+          <figure class="mat" data-mat="statuario"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-01</span>Statuario Marble<small>Feature walls · TV backdrops</small></figcaption></figure>
+          <figure class="mat" data-mat="walnut"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-02</span>Walnut Veneer<small>Panelling · Stair cladding</small></figcaption></figure>
+          <figure class="mat" data-mat="teal"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-03</span>Teal Upholstery<small>Living sectional</small></figcaption></figure>
+          <figure class="mat" data-mat="onyx"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-04</span>Verde Onyx<small>Bath feature slab</small></figcaption></figure>
+          <figure class="mat" data-mat="travertine"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-05</span>Travertine Slab<small>Wet walls · Flooring</small></figcaption></figure>
+          <figure class="mat" data-mat="stone"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-06</span>Ash Stone Tile<small>Shower room</small></figcaption></figure>
+          <figure class="mat" data-mat="fluted"><div class="mat__ball" data-cursor="Spin"></div><figcaption><span class="mono">M-07</span>Fluted Batten<small>Accent strips</small></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DRAWINGS ============ -->
+    <section class="drawings" id="drawings">
+      <div class="drawings__inner">
+        <div class="section-head section-head--dark">
+          <span class="mono section-index">(04)</span>
+          <span class="mono">Working Drawings — AutoCAD</span>
+        </div>
+        <div class="drawings__intro">
+          <h2 class="display split-lines">Where every space <em>begins</em> — on the sheet.</h2>
+          <div class="drawings__aside">
+            <p>Furnished ground-floor plans drafted in AutoCAD: room sizes, door swings, stair risers, cut-outs and double-height voids — the engineering under every render.</p>
+            <div class="toggle" role="group" aria-label="Drawing style">
+              <button class="toggle__btn is-active" data-mode="paper">Paper</button>
+              <button class="toggle__btn" data-mode="blueprint">Blueprint</button>
+              <span class="toggle__pill"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="plans">
+          <article class="plan" data-plan="0">
+            <div class="plan__sheet" data-cursor="Zoom">
+              <img src="assets/plans/plan-01-sm.webp" data-full="assets/plans/plan-01.png" alt="Ground floor plan, 40 by 55 feet residence" loading="lazy">
+              <div class="plan__lens" aria-hidden="true"></div>
+              <span class="plan__crop plan__crop--tl"></span><span class="plan__crop plan__crop--br"></span>
+            </div>
+            <div class="plan__block">
+              <div><span class="mono">Sheet</span><strong>P-01</strong></div>
+              <div><span class="mono">Plot</span><strong>40′ × 55′</strong></div>
+              <div><span class="mono">Rooms</span><strong>2 BHK + Servant</strong></div>
+            </div>
+            <h3 class="plan__title">Courtyard <em>Residence</em></h3>
+            <p class="plan__desc">Verandah entry, drawing room over an O.T.S, a double-height dining/living, kitchen with utility and store, two bedrooms with attached toilets and dress, and a dog-leg stair.</p>
+          </article>
+
+          <article class="plan" data-plan="1">
+            <div class="plan__sheet" data-cursor="Zoom">
+              <img src="assets/plans/plan-02-sm.webp" data-full="assets/plans/plan-02.png" alt="Ground floor plan, 40 feet 6 inches by 56 feet 10 inches residence with parking and lift" loading="lazy">
+              <div class="plan__lens" aria-hidden="true"></div>
+              <span class="plan__crop plan__crop--tl"></span><span class="plan__crop plan__crop--br"></span>
+            </div>
+            <div class="plan__block">
+              <div><span class="mono">Sheet</span><strong>P-02</strong></div>
+              <div><span class="mono">Plot</span><strong>40′6″ × 56′10″</strong></div>
+              <div><span class="mono">Rooms</span><strong>Foyer · Lift · 2 Cars</strong></div>
+            </div>
+            <h3 class="plan__title">Garden-court <em>House</em></h3>
+            <p class="plan__desc">An entry foyer with console, a drawing room opening onto a landscaped side court with three water bodies, two-car parking, master suite with dress, lift, powder room and servant quarter.</p>
+          </article>
+
+          <article class="plan" data-plan="2">
+            <div class="plan__sheet" data-cursor="Zoom">
+              <img src="assets/plans/plan-03-sm.webp" data-full="assets/plans/plan-03.png" alt="Ground floor plan, 54 by 77 feet villa with lawn and double-height living hall" loading="lazy">
+              <div class="plan__lens" aria-hidden="true"></div>
+              <span class="plan__crop plan__crop--tl"></span><span class="plan__crop plan__crop--br"></span>
+            </div>
+            <div class="plan__block">
+              <div><span class="mono">Sheet</span><strong>P-03</strong></div>
+              <div><span class="mono">Plot</span><strong>54′ × 77′</strong></div>
+              <div><span class="mono">Rooms</span><strong>Villa · Lawn · Pooja</strong></div>
+            </div>
+            <h3 class="plan__title">Lawn <em>Villa</em></h3>
+            <p class="plan__desc">Island kitchen, 12′ dining, a 28′ double-height living hall, pooja, drawing room onto a lawn with gazebo and water body, master suite with walk-in closet, lift, and separate pedestrian and vehicular entries.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXTERIOR REVEAL ============ -->
+    <section class="window" id="exteriors">
+      <div class="window__pin">
+        <div class="window__frame">
+          <img src="assets/img/exterior-corner.webp" alt="Corner elevation of a G+1 residence with cove-lit soffits and ledge-stone column" loading="lazy">
+        </div>
+        <div class="window__text">
+          <span class="mono">(05) — Elevations</span>
+          <h2 class="display"><span>From the inside</span> <em>out.</em></h2>
+        </div>
+        <div class="window__note mono">G+1 corner residence · brown frame band · ledge-stone column · cove-lit soffits</div>
+      </div>
+    </section>
+
+    <!-- ============ ARCHIVE ============ -->
+    <section class="archive" id="archive">
+      <div class="section-head">
+        <span class="mono section-index">(06)</span>
+        <span class="mono">Archive — every view</span>
+      </div>
+      <div class="archive__top">
+        <h2 class="display split-lines">The full <em>archive.</em></h2>
+        <div class="filters" role="tablist" aria-label="Filter renders"></div>
+      </div>
+      <div class="archive__grid"></div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience" id="experience">
+      <div class="section-head">
+        <span class="mono section-index">(07)</span>
+        <span class="mono">Experience &amp; Education</span>
+      </div>
+      <h2 class="display split-lines">On site, <em>on sheet.</em></h2>
+
+      <div class="timeline">
+        <div class="timeline__line"><span></span></div>
+
+        <article class="tl">
+          <div class="tl__date mono">May 2025 — Present</div>
+          <div class="tl__body">
+            <h3>Junior Civil Engineer</h3>
+            <p class="tl__org">Bhagwant University</p>
+            <ul>
+              <li>Manages on-site engineering works, keeping execution on schedule and to drawing.</li>
+              <li>Coordinates with senior engineers and contractors to implement designs and resolve site issues.</li>
+              <li>Runs regular inspections for progress, quality and safety compliance.</li>
+              <li>Drafts reports to track milestones and resource allocation across departments.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl">
+          <div class="tl__date mono">Feb 2024 — May 2025</div>
+          <div class="tl__body">
+            <h3>AutoCAD &amp; Interior Design</h3>
+            <p class="tl__org">CURIO Interiors — SketchUp</p>
+            <ul>
+              <li>Prepared 2D AutoCAD drawings — floor plans, sections and elevations.</li>
+              <li>Designed complete house interiors in SketchUp as one cohesive, client-led layout.</li>
+              <li>Built detailed 3D models to visualise every space before construction.</li>
+              <li>Worked with contractors and craftsmen to translate the models into finished rooms.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl">
+          <div class="tl__date mono">2020 — 2023</div>
+          <div class="tl__body">
+            <h3>Diploma in Civil Engineering</h3>
+            <p class="tl__org">Govt. Polytechnic College, Ajmer</p>
+          </div>
+        </article>
+
+        <article class="tl">
+          <div class="tl__date mono">School</div>
+          <div class="tl__body">
+            <h3>Senior Secondary</h3>
+            <p class="tl__org">Govt. Jawahar Senior Secondary School — RBSE</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills" id="skills">
+      <div class="section-head">
+        <span class="mono section-index">(08)</span>
+        <span class="mono">Toolkit</span>
+      </div>
+      <h2 class="display split-lines">The <em>toolkit.</em></h2>
+
+      <div class="tools">
+        <div class="tool" data-tilt><span class="tool__glare"></span><span class="tool__icon">A</span><h3>AutoCAD</h3><p>2D drafting — floor plans, sections, elevations. Certified in 2D &amp; basic 3D.</p><span class="mono tool__tag">Drafting</span></div>
+        <div class="tool" data-tilt><span class="tool__glare"></span><span class="tool__icon">Su</span><h3>SketchUp</h3><p>Whole-house interior modelling and spatial layout. Certified in 3D building design.</p><span class="mono tool__tag">3D Modelling</span></div>
+        <div class="tool" data-tilt><span class="tool__glare"></span><span class="tool__icon">3ds</span><h3>3ds Max</h3><p>Architectural modelling, materials and photoreal rendering. Certified.</p><span class="mono tool__tag">Rendering</span></div>
+        <div class="tool" data-tilt><span class="tool__glare"></span><span class="tool__icon">Rv</span><h3>Revit</h3><p>BIM modelling for coordinated building information.</p><span class="mono tool__tag">BIM</span></div>
+        <div class="tool" data-tilt><span class="tool__glare"></span><span class="tool__icon">X</span><h3>MS Excel</h3><p>Quantity estimation, BOQ and material tracking.</p><span class="mono tool__tag">Estimation</span></div>
+      </div>
+
+      <div class="skills__cols">
+        <div>
+          <h4 class="mono">Engineering &amp; site</h4>
+          <ul class="chips">
+            <li>Structural design &amp; analysis</li><li>Construction methods &amp; materials</li><li>Quantity estimation &amp; BOQ</li><li>Site execution &amp; supervision</li><li>RCC, steel &amp; masonry</li><li>Quality control on site</li><li>Labour management</li><li>Material management</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mono">Design &amp; people</h4>
+          <ul class="chips">
+            <li>Interior layout planning</li><li>3D visualisation</li><li>Reading technical drawings</li><li>Problem-solving at site</li><li>Communication</li><li>Time management</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mono">Certificates</h4>
+          <ol class="certs">
+            <li><strong>AutoCAD</strong><span>2D &amp; Basic 3D — Certified</span></li>
+            <li><strong>3ds Max</strong><span>Architectural Modelling &amp; Rendering</span></li>
+            <li><strong>SketchUp</strong><span>3D Modelling for Building Design</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="contact__bg" aria-hidden="true"><img src="assets/img/living-oval-mirrors-sm.webp" alt=""></div>
+      <div class="section-head">
+        <span class="mono section-index">(09)</span>
+        <span class="mono">Contact — Sheet A-09</span>
+      </div>
+      <h2 class="contact__title">
+        <span class="contact__line"><span>Let’s build</span></span>
+        <span class="contact__line"><span><em>something</em> real.</span></span>
+      </h2>
+
+      <div class="contact__grid">
+        <a class="contact__big" href="mailto:devangsinghmangliya@gmail.com" data-magnetic data-cursor="Write">
+          <span class="mono">Email</span>
+          <strong>devangsinghmangliya<wbr>@gmail.com</strong>
+          <i>↗</i>
+        </a>
+        <div class="contact__list">
+          <a href="tel:+917851944704" class="contact__item"><span class="mono">Phone</span><strong>+91 78519 44704</strong><i>↗</i></a>
+          <a href="https://wa.me/917851944704" target="_blank" rel="noopener" class="contact__item"><span class="mono">WhatsApp</span><strong>Message directly</strong><i>↗</i></a>
+          <div class="contact__item"><span class="mono">Studio</span><strong>Panchsheel Nagar, Ajmer</strong><i>●</i></div>
+          <a href="assets/Devang-Singh-CV.pdf" target="_blank" rel="noopener" class="contact__item"><span class="mono">Résumé</span><strong>Download CV (PDF)</strong><i>↓</i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__big" aria-hidden="true">Devang Singh</div>
+      <div class="footer__row mono">
+        <span>© 2026 Devang Singh</span>
+        <span class="footer__clock">Ajmer — <span data-clock>--:--</span> IST</span>
+        <a href="#top" class="footer__top" data-magnetic>Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============ PROJECT PANEL ============ -->
+  <div class="panel" aria-hidden="true" role="dialog" aria-label="Project details">
+    <div class="panel__scroll" data-lenis-prevent>
+      <button class="panel__close" aria-label="Close project" data-magnetic><span></span><span></span></button>
+      <div class="panel__hero"><img alt=""></div>
+      <div class="panel__head">
+        <span class="mono panel__num"></span>
+        <h2 class="panel__title"></h2>
+        <div class="panel__meta"></div>
+      </div>
+      <div class="panel__body">
+        <p class="panel__desc"></p>
+        <ul class="panel__highlights"></ul>
+      </div>
+      <div class="panel__gallery"></div>
+      <button class="panel__next" data-cursor="Next">
+        <span class="mono">Next project</span>
+        <strong></strong>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <div class="lightbox__stage"><img alt=""></div>
+    <div class="lightbox__bar mono">
+      <span class="lightbox__count"></span>
+      <span class="lightbox__cap"></span>
+      <span class="lightbox__hint">Click image to zoom · ← → · Esc</span>
+    </div>
+    <button class="lightbox__btn lightbox__prev" aria-label="Previous image">←</button>
+    <button class="lightbox__btn lightbox__next" aria-label="Next image">→</button>
+    <button class="lightbox__close" aria-label="Close viewer"><span></span><span></span></button>
+  </div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/SplitText.min.js"></script>
+  <script src="vendor/Flip.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="vendor/three.min.js"></script>
+  <script src="js/plan-data.js"></script>
+  <script src="js/textures.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/hero3d.js"></script>
+  <script src="js/materials3d.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
